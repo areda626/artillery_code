@@ -60,6 +60,7 @@ plt.plot(xpoints,ypoints)
 plt.xlabel("x [m]")
 plt.ylabel('y [m]')
 p1.show()
+pl.savefig('earth.png')
 
 r = np.array([0.0,0.0,v0*np.cos(theta),v0*np.sin(theta)],float)
 xpoints = []
@@ -80,6 +81,7 @@ plt.plot(xpoints,ypoints)
 plt.xlabel("x [m]")
 plt.ylabel('y [m]')
 p2.show()
+p2.savefig('mars.png')
 
 # try different values of m
 p3 = plt.figure(3)
@@ -105,7 +107,7 @@ plt.xlabel("x [m]")
 plt.ylabel('y [m]')
 plt.legend()
 p3.show()
-
+p3.savefig('earth_multi.png')
 # try different values of m for mars
 p4= plt.figure(4)
 for m in [0.25,0.5,1,2,4]:
@@ -130,3 +132,4 @@ plt.xlabel("x [m]")
 plt.ylabel('y [m]')
 plt.legend()
 p4.show()
+p4.savefig('mars_multi.png')
